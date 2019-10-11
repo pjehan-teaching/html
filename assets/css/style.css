@@ -1,0 +1,94 @@
+.reveal section blockquote {
+    background-color: white;
+    border-left: #082b36 2px solid;
+}
+
+.reveal section blockquote:before {
+    content: '💬';
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #ccc;
+    font-size: 2em;
+}
+
+.reveal section blockquote cite {
+    display: block;
+    color: #969696;
+}
+
+.reveal section blockquote cite:before {
+    content: '-';
+}
+
+.reveal .keyboard-key {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.1em 0.5em;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    background-color: #f7f7f7;
+}
+
+.reveal .directory-structure,
+.reveal .directory-structure ul {
+    list-style-type: none;
+}
+
+.reveal .directory-structure li.dir:before {
+    content: '📂';
+}
+
+.reveal .directory-structure li.dir.current:before {
+    color: red;
+}
+
+.reveal .directory-structure li.file {
+    display: flex;
+}
+
+.reveal .directory-structure li.file:before {
+    content: '📄';
+}
+
+.reveal .compatibility-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    border: #082b36 2px solid;
+}
+
+.reveal .compatibility-box h3 {
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #082b36;
+    color: #fdf6e3;
+}
+
+.reveal .compatibility-box ul.browser-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reveal .compatibility-box ul.browser-list > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.reveal .compatibility-box ul.browser-list > li .support-ok {
+    color: #57CC18;
+}
+
+.reveal .compatibility-box ul.browser-list > li .support-partial {
+    color: #FFAA39;
+}
+
+.reveal .compatibility-box ul.browser-list > li .support-not {
+    color: #FF3939;
+}

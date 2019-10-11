@@ -1,0 +1,91 @@
+<section id="forms">
+
+    <section>
+        <h2>Les formulaires</h2>
+    </section>
+
+    <section>
+        <h3>Créer un formulaire</h3>
+        <p>Un formulaire est délimité par une balise <code class="language-html">&lt;form&gt;&lt;/form&gt;</code>.</p>
+        <p>L'attribut <code class="language-html">method</code> permet de définir la méthode HTTP (GET, POST, PUT...) utilisée pour l'envoi des données du formulaire.</p>
+        <p>L'attribut <code class="language-html">action</code> permet de définir la page qui sera chargée de traiter l'envoi des données du formulaire.</p>
+        <p>Vous pouvez également utiliser une balise <code class="language-html">&lt;input&gt;</code> ou <code class="language-html">&lt;button&gt;&lt;/button&gt;</code> de type <code class="language-html">submit</code> pour envoyer les données.</p>
+    </section>
+
+    <section>
+        <h3>Zone de texte</h3>
+        <p>Vous pouvez utiliser la balise auto-fermante <code class="language-html">&lt;input&gt;</code> pour définir un champ de saisie.</p>
+        <p>L'attribut <code class="language-html">type</code> permet de définir le type de données à saisir (text, email, date, number...)</p>
+        <p>L'attribut <code class="language-html">placeholder</code> permet d'indiquer la saisie attendue dans le champs.</p>
+        <p>L'attribut <code class="language-html">required</code> permet d'indiquer que le champ est requis.</p>
+        <footer>
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp" class="info" target="_blank">Liste des types d'input</a>
+            <a href="https://www.w3schools.com/tags/att_input_name.asp" class="warning" style="font-size: 0.8em;" target="_blank">L'attribut name est indispensable pour gérer l'envoi des données</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Zone de texte</h3>
+        <div class="container" style="min-height: 300px;">
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements/input" data-property="number"></div>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements/input" data-property="email"></div>
+            </div>
+        </div>
+        <div class="container" style="min-height: 300px;">
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements/input" data-property="color"></div>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements/input" data-property="tel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Libellé</h3>
+        <p>Les libellés permettent d'indiquer à l'internaute ce qu'il doit saisir dans un champ de formulaire.</p>
+        <p>La balise HTML <code class="language-html">&lt;label&gt;&lt;/label&gt;</code> permet de créer un libellé.</p>
+        <p>L'attribut <code class="language-html">for</code> permet d'associer un libellé avec l'id dans champ de formulaire.</p>
+        <footer>
+            <a href="https://www.w3schools.com/tags/att_label_for.asp" class="info" style="font-size: 0.7em;" target="_blank">Lorsque l'internaute clique sur un label, le focus se fait sur le champ de formulaire correspondant</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Zone de texte multiligne</h3>
+        <p>La balise <code class="language-html">&lt;textarea&gt;&lt;/textarea&gt;</code> permet de créer une zone de texte multiligne.</p>
+        <p>Les attributs <code class="language-html">rows</code> et <code class="language-html">cols</code> permettent de modifier la taille de la zone de texte.</p>
+        <footer>
+            <a href="https://www.w3schools.com/TAGS/tag_textarea.asp" class="warning" target="_blank">Contrairement aux inputs, les textarea n'ont pas d'attribut value</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Choix multiples</h3>
+        <p>La balise <code class="language-html">&lt;input&gt;</code> de type <code class="language-html">checkbox</code> permet de créer une case à cocher.</p>
+        <p>La balise <code class="language-html">&lt;input&gt;</code> de type <code class="language-html">radio</code> permet de créer un bouton radio.</p>
+        <p>Ces éléments peuvent être regroupés en leur attribuant un attribut <code class="language-html">name</code> identique.</p>
+        <p>L'attribut <code class="language-html">checked</code> permet de sélectionner une option par défaut.</p>
+        <p>L'attribut <code class="language-html">value</code> permet de définir la données qui sera envoyée.</p>
+    </section>
+
+    <section>
+        <h3>Listes déroulantes</h3>
+        <p>La balise <code class="language-html">&lt;select&gt;&lt;/select&gt;</code> permet de créer une <strong>liste déroulante</strong>.</p>
+        <p>La balise <code class="language-html">&lt;option&gt;&lt;/option&gt;</code> permet de créer un choix de la liste déroulante.</p>
+        <p>L'attribut <code class="language-html">value</code> permet de définir la données qui sera envoyée.</p>
+    </section>
+
+    <section>
+        <h3>Regroupement de champs</h3>
+        <p>Vous pouvez utiliser les balises <code class="language-html">&lt;fieldset&gt;&lt;/fieldset&gt;</code> et <code class="language-html">&lt;legend&gt;&lt;/legend&gt;</code> pour regrouper des champs de formulaire.</p>
+    </section>
+
+    <section>
+        <h3>TP: Créer un CV en HTML</h3>
+    </section>
+
+</section>

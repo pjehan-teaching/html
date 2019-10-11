@@ -4,6 +4,89 @@
         <h2>Historique</h2>
     </section>
 
+    <section>
+        <h3>Evolution du web</h3>
+        <a href="http://www.evolutionoftheweb.com" target="_blank">evolutionoftheweb.com</a>
+    </section>
 
+    <section>
+        <h3>SGML (Standard Generalized Markup Language)</h3>
+        <ul>
+            <li>Langage de description à balises</li>
+            <li>
+                Composé en trois parties :
+                <ol>
+                    <li>DTD (structure du document)</li>
+                    <li>Feuilles de style (mise en forme du document)</li>
+                    <li>Données</li>
+                </ol>
+            </li>
+            <li>XML est une version simplifiée de SGML</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Doctype (ou DTD)</h3>
+        <ul>
+            <li>Permet de spécifié le type d’un document SGML ou XML</li>
+            <li>N’est utilisé par les navigateur pour reconnaitre la version HTML utilisé mais <strong>PAS</strong> pour la validation du code (il pourra être utilisé à l’aide par exemple des outils en ligne du W3C)</li>
+        </ul>
+        <p>HTML5</p>
+        <pre><code class="language-html">&lt;!DOCTYPE html&gt;</code></pre>
+        <p>HTML4.01 transitional</p>
+        <pre><code class="language-html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></pre>
+        <p>XHTML1.0 transitional</p>
+        <pre><code class="language-html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>HTML (HyperText Markup Language)</h3>
+        <ul>
+            <li>Langage basé sur le SGML créé en 1991 par Tim Berners-Lee</li>
+            <li><strong>Pas</strong> un langage de programmation</li>
+            <li>Langage de balisage d’hypertexte</li>
+        </ul>
+        <div class="container">
+            <div class="col">
+                <img src="assets/images/tim-berners-lee.jpg" alt="Tim Berners-Lee">
+            </div>
+            <div class="col">
+                <img src="assets/images/hypertext.jpg" alt="Hypertext">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>XHTML (EXtensible HyperText Markup Language)</h3>
+        <ul>
+            <li>Langage respectant les normes du XML</li>
+            <li>Plus strict que le langage HTML</li>
+            <li>La déclaration DOCTYPE est requise</li>
+            <li>L'attribut xmlns de la balise <code class="language-html">&lt;html&gt;</code> est requis</li>
+            <li>Les balises doivent être correctement imbriquées, toujours fermées et être en lowercase.</li>
+            <li>Les attributs doivent être en lowercase, leur valeur entre quote et doivent obligatoirement avoir une valeur.</li>
+        </ul>
+        <pre><code class="language-html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>W3C (World Wide Web Consortium)</h3>
+        <ul>
+            <li>Organisme de normalisation à but non lucratif</li>
+            <li>Promouvoir la compatibilité des technologies du World Wide Web</li>
+        </ul>
+        <blockquote>
+            <p>un seul web partout et pour tous</p>
+            <cite>W3C</cite>
+        </blockquote>
+    </section>
 
 </section>

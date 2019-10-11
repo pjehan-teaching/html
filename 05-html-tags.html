@@ -1,0 +1,573 @@
+<section id="html-tags">
+
+    <section>
+        <h2>Les balises HTML</h2>
+    </section>
+
+    <section>
+        <h3>Les balises</h3>
+        <ul>
+            <li>Une balise est un élément de texte (un nom) encadrée par le caractère inférieur (<) et le caractère supérieur (>).</li>
+            <li>Les balises HTML ne sont pas sensibles à la casse.</li>
+            <li>Les balises HTML fonctionnent par paire afin d'agir sur les éléments qu'elles encadrent (balise ouvrante et balise fermante précédée par le caractère « / »)</li>
+            <li>Les balises HTML peuvent parfois être uniques et ne pas contenir d'information : la balise <code class="language-html">&lt;br/&gt;</code> ou <code class="language-html">&lt;img src="./logo.png"/&gt;</code></li>
+            <li>Les balises HTML peuvent contenir des attributs (par exemple l'attribut src de la balise img).</li>
+        </ul>
+        <p>Il existe plus de 100 balises HTML. Nous ne verrons donc que les plus utilisées.</p>
+        <footer>
+            <a href="https://www.w3schools.com/tags/" class="info" target="_blank">Liste des balises</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Identifiez les erreurs</h3>
+        <pre><code class="language-html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Mon premier site internet&lt;title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;img&gt;./monimage.jpg&lt;/img&gt;
+        &lt;p&gt;
+            Hello &lt;B&gt;WORLD&lt;/B&gt;!!
+        &lt;/p&gt;
+    &lt;/html&gt;
+&lt;/body&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>Le code minimal</h3>
+        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr-FR"&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <ul>
+            <li><code class="language-html" style="font-size: 0.6em">&lt;!DOCTYPE html&gt;</code> pour indiquer la version HTML</li>
+            <li><code class="language-html" style="font-size: 0.6em">&lt;html&gt;&lt;/html&gt;</code> pour englober la page</li>
+            <li><code class="language-html" style="font-size: 0.6em">&lt;head&gt;&lt;/head&gt;</code> pour définir les informations de la page</li>
+            <li><code class="language-html" style="font-size: 0.6em">&lt;title&gt;&lt;/title&gt;</code> pour définir le titre de la page</li>
+            <li><code class="language-html" style="font-size: 0.6em">&lt;body&gt;&lt;/body&gt;</code> pour englober le corps de la page</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>La balise head</h3>
+        <pre><code class="language-html">&lt;head&gt;
+    &lt;title&gt;Titre de ma page&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Apprendre le HTML et le CSS&quot; /&gt
+    &lt;meta name=&quot;keywords&quot; content=&quot;HTML,CSS&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Tim Berners-Lee&quot; /&gt;
+    &lt;meta name=&quot;language&quot; content=&quot;fr-FR&quot; /&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;
+&lt;/head&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>La balise head</h3>
+        <pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;app.js&quot; /&gt;
+&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
+        <footer>
+            <a href="#" class="warning" style="font-size: 0.8em;">Il est préférable de mettre les appels Javascript avant la balise <code class="language-html">&lt;/body&gt;</code></a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Inline VS Block</h3>
+        <p>Certaines balises sont de type <strong>inline</strong> et d'autres de type <strong>block</strong>.</p>
+        <div class="container">
+            <div class="col">
+                <h4>Inline</h4>
+                <code class="language-html">&lt;span&gt;&lt;span/&gt;</code>
+                <code class="language-html">&lt;i&gt;&lt;i/&gt;</code>
+                <code class="language-html">&lt;strong&gt;&lt;strong/&gt;</code>
+            </div>
+            <div class="col">
+                <h4>Block</h4>
+                <code class="language-html" style="display: block;">&lt;div&gt;&lt;div/&gt;</code>
+                <code class="language-html" style="display: block;">&lt;h1&gt;&lt;h1/&gt;</code>
+                <code class="language-html" style="display: block;">&lt;p&gt;&lt;p/&gt;</code>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Commentaires</h3>
+        <p>Il est possible (et recommandé) de documenter son code HTML en utilisant des commentaires :</p>
+        <pre><code class="language-html">&lt;!-- Titre de niveau 1 --&gt;
+&lt;h1&gt;Mon titre&lt;/h1&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>La sémantique</h3>
+        <p>Certaines balises ont un impact sur le référencement (SEO) et d'autres n'en ont pas.</p>
+        <p>Par exemple, les balises <code class="language-html">&lt;div&gt;</code> ou <code class="language-html">&lt;span&gt;</code> en sont pas sémantiques tandis que les balises <code class="language-html">&lt;h1&gt;</code> ou <code class="language-html">&lt;strong&gt;</code> ont une signification (respectivement titre de niveau 1 et texte important).</p>
+    </section>
+
+    <section>
+        <h3>Titres</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>Il est possible de créer des titres de plusieurs niveaux en utilisant les balises suivantes :</p>
+                <ul>
+                    <li><code class="language-html">&lt;h1&gt;&lt;/h1&gt;</code></li>
+                    <li><code class="language-html">&lt;h2&gt;&lt;/h2&gt;</code></li>
+                    <li><code class="language-html">&lt;h3&gt;&lt;/h3&gt;</code></li>
+                    <li>...</li>
+                </ul>
+                <p>En fonction du navigateur, le titre sera affiché plus ou moins grand.</p>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="h1"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.youtube.com/watch?v=zyqJJXWk0gk" class="info" style="font-size: 0.8em;" target="_blank">Il est possible de définir plusieurs h1 sur une même page</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Titres (exemples)</h3>
+        <div class="container">
+            <div class="col">
+                <pre><code class="language-html">&lt;h1&gt;Niveau 1&lt;/h1&gt;
+&lt;h2&gt;Niveau 2&lt;/h2&gt;
+&lt;h3&gt;Niveau 3&lt;/h3&gt;</code></pre>
+            </div>
+            <div class="col">
+                <h1>Niveau 1</h1>
+                <h2>Niveau 2</h2>
+                <h3>Niveau 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Conteneurs</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>Il est préférable d'utiliser des balises sémantiques comme conteneurs :</p>
+                <ul>
+                    <li><code class="language-html">&lt;header&gt;&lt;/header&gt;</code></li>
+                    <li><code class="language-html">&lt;footer&gt;&lt;/footer&gt;</code></li>
+                    <li><code class="language-html">&lt;main&gt;&lt;/main&gt;</code></li>
+                    <li><code class="language-html">&lt;section&gt;&lt;/section&gt;</code></li>
+                    <li><code class="language-html">&lt;article&gt;&lt;/article&gt;</code></li>
+                    <li><code class="language-html">&lt;nav&gt;&lt;/nav&gt;</code></li>
+                    <li><code class="language-html">&lt;aside&gt;&lt;/aside&gt;</code></li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="article"></div>
+            </div>
+        </div>
+        <p>Ces balises sont toutes de type <strong>inline</strong> et n'ont pas d'impact visuel sur la page.</p>
+        <footer>
+            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" class="warning" target="_blank">Ces balises sont apparues avec la version 5 du langage HTML</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Paragraphes</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>La balise <code class="language-html">&lt;p&gt;&lt;/p&gt;</code> permet de contenir un paragraphe.</p>
+                <p>La balise <code class="language-html">&lt;br&gt;</code> permet d'effectuer un retour à la ligne (très rarement utilisée).</p>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="p"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="javascript:" class="warning" style="font-size: 0.8em;">Un paragraphe ne peux contenir que des éléments de type inline</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Mise en avant du texte</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>La balise <code class="language-html">&lt;strong&gt;</code> permet de marquer un texte comme <strong>important</strong>.</p>
+                <p>Il existe également les balises :</p>
+                <ul>
+                    <li><code class="language-html">&lt;em&gt;</code> : emphasized</li>
+                    <li><code class="language-html">&lt;mark&gt;</code> : marked / highlighted</li>
+                    <li><code class="language-html">&lt;b&gt;</code> : bold</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="strong"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" class="warning" style="font-size: 0.8em;" target="_blank">La balise <code class="language-html">&lt;b&gt;</code> ne doit pas être utilisée pour la mise en forme (CSS)</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Mise en avant du texte</h3>
+        <div class="container">
+            <div class="col">
+                <pre><code class="language-html">&lt;strong&gt;Strong&lt;/strong&gt;
+&lt;em&gt;Emphasized&lt;/em&gt;
+&lt;mark&gt;Marked&lt;/mark&gt;
+&lt;b&gt;Bold&lt;/b&gt;</code></pre>
+            </div>
+            <div class="col">
+                <strong>Strong</strong>
+                <em>Emphasized</em>
+                <mark>Marked</mark>
+                <b>Bold</b>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Listes</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>La balise <code class="language-html">&lt;ul&gt;</code> (unordered list) permet de créer une <strong>liste à puces</strong>.</p>
+                <p>La balise <code class="language-html">&lt;ol&gt;</code> (ordered list) permet de créer une <strong>liste à puces ordonnées</strong>.</p>
+                <p>La balise <code class="language-html">&lt;li&gt;</code> (list item) permet de créer un <strong>élément d'une liste</strong> et doit impérativement se trouver dans un balise <code class="language-html">&lt;ul&gt;</code> ou <code class="language-html">&lt;ol&gt;</code>.</p>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="ul"></div>
+            </div>
+        </div>
+        <p>Les balises <code class="language-html">&lt;dl&gt;</code>, <code class="language-html">&lt;dt&gt;</code> et <code class="language-html">&lt;dd&gt;</code> peuvent être utilisées pour une liste de mots avec leur définition.</p>
+        <footer>
+            <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" class="info" style="font-size: 0.8em;">Il est également possible de définir la forme de la puce (disc, circle...) en CSS</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Listes (exemple)</h3>
+        <div class="container">
+            <div class="col">
+                <pre><code class="language-html">&lt;ul&gt;
+    &lt;li&gt;un&lt;/li&gt;
+    &lt;li&gt;deux&lt;/li&gt;
+    &lt;li&gt;trois&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>un</li>
+                    <li>deux</li>
+                    <li>trois</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Tableaux</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>La balise <code class="language-html">&lt;table&gt;</code> permet de créer un <strong>tableau</strong>.</p>
+                <p>Les balises <code class="language-html">&lt;thead&gt;</code>, <code class="language-html">&lt;tbody&gt;</code> et <code class="language-html">&lt;tfoot&gt;</code> permettent d'identifier <strong>l'en-tête</strong>, le <strong>corps</strong> et le <strong>pied</strong> du tableau.</p>
+                <p>La balise <code class="language-html">&lt;tr&gt;</code> permet de créer une <strong>ligne</strong>.</p>
+                <p>Les balises <code class="language-html">&lt;th&gt;</code> et <code class="language-html">&lt;td&gt;</code> permettent de créer respectivement <strong>une cellule d'en-tête</strong> et une <strong>cellule du corps</strong> d'un tableau.</p>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="table"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="javascript:" class="danger">Il ne faut pas utiliser les tableaux pour positionner des éléménts</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Tableaux (exemple)</h3>
+        <div class="container">
+            <div class="col">
+                <pre style="max-height: 300px;"><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nom&lt;/th&gt;
+        &lt;th&gt;Prénom&lt;/th&gt;
+        &lt;th&gt;Note&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;15&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;-&lt;/td&gt;
+        &lt;td&gt;-&lt;/td&gt;
+        &lt;td&gt;14.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+            <div class="col">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Note</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Doe</td>
+                        <td>15</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>14.5</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.w3schools.com/tags/att_td_colspan.asp" class="info" target="_blank" style="font-size: 0.8em;">Les attributs colspan et rowspan permettent de regrouper des cellules</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Images</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>La balise <code class="language-html">&lt;img&gt;</code> permet de créer une <strong>image</strong>.</p>
+                <p>L'attribut <code class="language-html">src</code> permet de définir la source (fichier à afficher).</p>
+                <p>L'attribut <code class="language-html">alt</code> permet de définir le texte à afficher si l'image ne se charge pas correctement.</p>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="img"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://developers.google.com/web/tools/lighthouse/audits/alt-attribute" class="warning" target="_blank">Toutes les images doivent avoir un attribut <code class="language-html">alt</code></a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Images</h3>
+        <p>Le chemin de l'attribut <code class="language-html">src</code> peut être en relatif ou absolue.</p>
+        <div class="container">
+            <div class="col">
+                <ul class="directory-structure">
+                    <li class="dir">
+                        <span>var</span>
+                        <ul>
+                            <li class="dir">
+                                <span>www</span>
+                                <ul>
+                                    <li class="dir current">
+                                        <span>foo</span>
+                                        <ul>
+                                            <li class="dir">
+                                                <span>images</span>
+                                                <ul>
+                                                    <li class="file">logo.svg</li>
+                                                    <li class="file">background.png</li>
+                                                </ul>
+                                            </li>
+                                            <li class="file"><span>index.html</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dir">
+                                        <span>bar</span>
+                                        <ul>
+                                            <li class="file"><span>index.html</span></li>
+                                            <li class="file"><span>contact.html</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>absolute</th>
+                        <th>relative</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>/var</td>
+                        <td>../../</td>
+                    </tr>
+                    <tr>
+                        <td>/var/www</td>
+                        <td>../</td>
+                    </tr>
+                    <tr>
+                        <td>/var/www/foo</td>
+                        <td>./</td>
+                    </tr>
+                    <tr>
+                        <td>/var/www/foo/index.html</td>
+                        <td>./index.html</td>
+                    </tr>
+                    <tr>
+                        <td>/var/www/foo/images/logo.svg</td>
+                        <td>./images/logo.svg</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <a href="javascript:" class="info">Il est préférable d'utiliser les chemins relatifs</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Images</h3>
+        <div class="container">
+            <div class="col">
+                <table style="font-size: 0.6em;">
+                    <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Transparency</th>
+                        <th>Animation</th>
+                        <th>Browser</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="http://en.wikipedia.org/wiki/Graphics_Interchange_Format">GIF</a></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>All</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a></td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>All</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://en.wikipedia.org/wiki/JPEG">JPEG</a></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>All</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://en.wikipedia.org/wiki/JPEG_XR">JPEG XR</a></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>IE</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://en.wikipedia.org/wiki/WebP">WebP</a></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Chrome, Opera, Android</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <img src="assets/images/image-format-tree.png" alt="Choisir un format d'image">
+            </div>
+        </div>
+        <footer>
+            <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization" class="info" target="_blank">Google Developers</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Images (exemple)</h3>
+        <pre><code class="language-html">&lt;img src=&quot;https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png&quot; alt=&quot;Wikipedia&quot;&gt;</code></pre>
+        <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="Wikipedia">
+    </section>
+
+    <section>
+        <h3>Liens</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>La balise <code class="language-html">&lt;a&gt;</code> permet de créer un <strong>lien</strong>.</p>
+                <p>L'attribut <code class="language-html">href</code> permet de définir la destination.</p>
+                <p>L'attribut <code class="language-html">target</code> permet de définir la manière donc la redirection sera effectuée (la valeur <code class="language-html">_blank</code> permet par exemple d'ouvrir dans un nouvel onglet).</p>
+            </div>
+            <div class="col">
+                <div class="compatibility-box" data-category="html" data-subcategory="elements" data-property="a"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="http://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex" class="info" target="_blank">Les serveurs Apache affichent le fichier index.html par défaut</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Liens</h3>
+        <p>Il est possible de créer des liens vers une section d'une page (ancre) en ajoutant un "#" au début de l'attribut <code class="language-html">href</code> et en ayant un élément avec l'id correspondant dans la page.</p>
+        <pre><code class="language-html">&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#presentation&quot;&gt;Présentation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nos-services&quot;&gt;Nos services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;section id=&quot;#presentation&quot;&gt;
+    ...
+&lt;/section&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>Liens</h3>
+        <p>Il est également possible d'ouvrir automatiquement le client email ou téléphone lorsque l'on clique sur un lien :</p>
+        <pre><code class="language-html">&lt;a href=&quot;mailto:contact@monsite.com&quot;&gt;M'écrire un mail&lt;/a&gt;
+&lt;a href=&quot;tel:0123456789&quot;&gt;0123456789&lt;/a&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>Liens (exemple)</h3>
+        <div class="container">
+            <div class="col">
+                <pre><code class="language-html">&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt;Google&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.qwant.com&quot; target=&quot;_blank&quot;&gt;Qwant&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.lycos.com&quot; target=&quot;_blank&quot;&gt;Lycos&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
+            <div class="col">
+                <nav>
+                    <ul>
+                        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+                        <li><a href="http://www.qwant.com" target="_blank">Qwant</a></li>
+                        <li><a href="http://www.lycos.com" target="_blank">Lycos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+</section>
