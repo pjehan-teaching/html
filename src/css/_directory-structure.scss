@@ -1,0 +1,28 @@
+.reveal {
+
+  .directory-structure {
+    list-style-type: none;
+    ul {
+      list-style-type: none;
+      li {
+        &.dir {
+          &:before {
+            content: '📂';
+          }
+          &.current {
+            &:before {
+              color: red;
+            }
+          }
+        }
+        &.file {
+          display: flex;
+          &:before {
+            content: '📄';
+          }
+        }
+      }
+    }
+  }
+
+}

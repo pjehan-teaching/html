@@ -1,2 +1,5 @@
 .idea/
+node_modules/
 exercises/
+assets/js/
+assets/public/

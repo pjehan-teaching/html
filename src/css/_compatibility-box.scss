@@ -1,0 +1,39 @@
+.reveal {
+
+  .compatibility-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    border: #082b36 2px solid;
+    h3 {
+      padding: 0.5em;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #082b36;
+      color: #fdf6e3;
+    }
+    ul.browser-list {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      & > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5px;
+        .support-ok {
+          color: #57CC18;
+        }
+        .support-partial {
+          color: #FFAA39;
+        }
+        .support-not {
+          color: #FF3939;
+        }
+      }
+    }
+  }
+
+}
