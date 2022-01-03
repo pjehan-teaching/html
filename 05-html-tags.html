@@ -72,7 +72,7 @@
         <pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;app.js&quot; /&gt;
 &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
         <footer>
-            <a href="#" class="warning" style="font-size: 0.8em;">Il est préférable de mettre les appels Javascript avant la balise <code class="language-html">&lt;/body&gt;</code></a>
+            <a href="#" class="warning" style="font-size: 0.8em;">Il est préférable de mettre les appels Javascript avant la balise <code class="language-html">&lt;body/&gt;</code></a>
         </footer>
     </section>
 
@@ -100,12 +100,20 @@
         <p>Il est possible (et recommandé) de documenter son code HTML en utilisant des commentaires :</p>
         <pre><code class="language-html">&lt;!-- Titre de niveau 1 --&gt;
 &lt;h1&gt;Mon titre&lt;/h1&gt;</code></pre>
+        <footer>
+            <a href="#" class="warning" style="font-size: 0.8em;">Ne pas mettre d'informations sensibles dans les commentaires HTML !</a>
+        </footer>
     </section>
 
     <section>
         <h3>La sémantique</h3>
         <p>Certaines balises ont un impact sur le référencement (SEO) et d'autres n'en ont pas.</p>
-        <p>Par exemple, les balises <code class="language-html">&lt;div&gt;</code> ou <code class="language-html">&lt;span&gt;</code> en sont pas sémantiques tandis que les balises <code class="language-html">&lt;h1&gt;</code> ou <code class="language-html">&lt;strong&gt;</code> ont une signification (respectivement titre de niveau 1 et texte important).</p>
+        <p>Par exemple, les balises <code class="language-html">&lt;div&gt;</code> ou <code class="language-html">&lt;span&gt;</code> ne sont pas sémantiques tandis que les balises <code class="language-html">&lt;h1&gt;</code> ou <code class="language-html">&lt;strong&gt;</code> ont une signification (respectivement titre de niveau 1 et texte important).</p>
+        <p>
+            Pour afficher un texte important en gras, on pourrait être tenté d'utiliser la balise HTML <code class="language-html">&lt;b&gt;</code>.
+            Cependant, cette balise n'a pas de valeur sémantique pour les moteurs de recherche et il sera donc préférable d'utiliser la balise <code class="language-html">&lt;strong&gt;</code>.
+            De manière générale, la mise en forme sera gérée par le code CSS le HTML devra se <strong>focaliser sur la sémantique</strong>.
+        </p>
     </section>
 
     <section>
