@@ -16,13 +16,13 @@
     "css-loader": "^3.2.0",
     "font-awesome": "^4.7.0",
     "prismjs": "^1.17.1",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^10.0.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
     "file-loader": "^4.2.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^6.0.1"
   }
 }
