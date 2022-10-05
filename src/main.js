@@ -45,7 +45,7 @@ document.getElementById('revealexpress').addEventListener('loaded', function(eve
         let subcategories = subcategory.split("/");
         if (subcategories.length > 1) {
           if (subcategories[1] === "input") {
-            property = "input-" + property;
+            property = "type_" + property;
           }
           data = data[category][subcategories[0]][subcategories[1]][property].__compat;
         } else {
