@@ -62,7 +62,7 @@ document.getElementById('revealexpress').addEventListener('loaded', function(eve
         browsers.appendChild(browserStats(data.support.chrome, 'chrome', 'fa-chrome'));
         browsers.appendChild(browserStats(data.support.firefox, 'firefox', 'fa-firefox'));
         browsers.appendChild(browserStats(data.support.edge, 'edge', 'fa-edge'));
-        browsers.appendChild(browserStats(data.support.ie, 'ie', 'fa-internet-explorer'));
+        browsers.appendChild(browserStats(data.support.ie, 'opera', 'fa-opera'));
         browsers.appendChild(browserStats(data.support.safari, 'safari', 'fa-safari'));
 
         box.appendChild(browsers);
