@@ -7,11 +7,11 @@ document.getElementById('revealexpress').addEventListener('loaded', function(eve
   Prism.highlightAll();
 
   const browserData = {
-    chrome: { color: '#00c000', currentVersion: 77, marketShare: { worldwide: 63.72, france: 57.89 } },
-    firefox: { color: '#e46e0e', currentVersion: 69, marketShare: { worldwide: 4.45, france: 9.28 }  },
-    edge: { color: '#7aaffe', currentVersion: 18, marketShare: { worldwide: 2.15, france: 2.96 }  },
-    ie: { color: '#2252d8', currentVersion: 11, marketShare: { worldwide: 2.23, france: 3.44 }  },
-    safari: { color: '#808080', currentVersion: 13, marketShare: { worldwide: 16.34, france: 19.43 }  }
+    chrome: { color: '#00c000', currentVersion: 117, marketShare: { worldwide: 63.56, france: 56.51 } },
+    safari: { color: '#008ce2', currentVersion: 17, marketShare: { worldwide: 19.85, france: 22.37 }  },
+    firefox: { color: '#e46e0e', currentVersion: 117, marketShare: { worldwide: 2.94, france: 7.41 }  },
+    edge: { color: '#005399', currentVersion: 117, marketShare: { worldwide: 5.43, france: 5.81 }  },
+    opera: { color: '#ff1e35', currentVersion: 102, marketShare: { worldwide: 2.74, france: 2.04 }  }
   };
 
   function browserStats(data, browser, faClass) {
